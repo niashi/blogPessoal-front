@@ -6,6 +6,10 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+
+    // Resolve problemas das models sem construtor, pois permite que os atributos não sejam inicializados.
+    "strictPropertyInitialization": false,
+    
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
