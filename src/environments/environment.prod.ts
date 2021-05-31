@@ -3,5 +3,9 @@ export const environment = {
   token: '',
   nome: '',
   id: 0,
-  foto: ''
+  foto: '',
+  server: 'https://meuhumildeblog.herokuapp.com/'
 };
+
+
+// https://meuhumildeblog.herokuapp.com/
