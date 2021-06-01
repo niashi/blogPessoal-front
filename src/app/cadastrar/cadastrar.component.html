@@ -14,6 +14,12 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
+                        <!-- 
+                            
+                            ngModel: captura a interação do usuário e adiciona a uma variável (ex.: 'true' ou 'false')
+                        Leia-se: "o que o usuário digitar no input, coloque dentro da variável user.nome"
+
+                        -->
                         <input [(ngModel)]='user.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
                     </div>
 

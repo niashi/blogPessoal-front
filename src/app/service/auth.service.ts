@@ -14,11 +14,15 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+  // Observable: verifica o método de entrada, ou seja, analisa se o que entra é uma variável do tipo UserLogin
   entrar(userLogin: UserLogin): Observable<UserLogin> {
     return this.http.post<UserLogin>(`${environment.server}/usuarios/logar`, userLogin)
+    // Aqui, o Observable verifica se o que é enviado (post) é do tipo UserLogin
   }
 
+  // Observable: verifica o método de entrada, ou seja, analisa se o que entra é uma variável do tipo User
   cadastrar(user: User): Observable<User> {
     return this.http.post<User>(`${environment.server}/usuarios/cadastrar`, user)
+    // Aqui, o Observable verifica se o que é enviado (post) é do tipo User
   }
 }

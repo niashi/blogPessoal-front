@@ -10,7 +10,10 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
+  // Criando uma instância da classe User
+  // (leia-se "variável user, do tipo User, será uma nova instância da classe User")
   user: User = new User
+
   confirmarSenha: string
   tipoUsuario: string
 
