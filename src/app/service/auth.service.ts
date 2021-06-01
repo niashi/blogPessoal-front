@@ -25,4 +25,14 @@ export class AuthService {
     return this.http.post<User>(`${environment.server}/usuarios/cadastrar`, user)
     // Aqui, o Observable verifica se o que é enviado (post) é do tipo User
   }
+
+  logado() {
+    let ok: boolean = false
+
+    if (environment.token != '') {
+      ok = true
+    } 
+
+    return ok
+  }
 }
