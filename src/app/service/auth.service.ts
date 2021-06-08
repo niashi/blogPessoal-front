@@ -26,6 +26,10 @@ export class AuthService {
     // Aqui, o Observable verifica se o que é enviado (post) é do tipo User
   }
 
+  getByIdUser(id: number): Observable<User> {
+    return this.http.get<User>(`${environment.server}/${id}`)
+  }
+
   logado() {
     let ok: boolean = false
 
