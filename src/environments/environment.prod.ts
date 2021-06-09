@@ -4,9 +4,9 @@ export const environment = {
   nome: '',
   id: 0,
   foto: '',
-  server: 'https://meuhumildeblog.herokuapp.com'
+  server: 'http://localhost:8080'
 };
 
 
 // https://meuhumildeblog.herokuapp.com
-// localhost:8080
+// http://localhost:8080
